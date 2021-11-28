@@ -81,16 +81,16 @@ class NetworkManager {
         }
     }
     
-    private func dataFrom(_ tempLocalUrl: URL?) -> Data!{
+    private func dataFrom(_ tempLocalUrl: URL?) -> Data {
         guard let tempLocalUrl = tempLocalUrl else{
-            return nil
+            return Data()
         }
         
         do {
             let data = try Data(contentsOf: tempLocalUrl)
             return data
         } catch {
-            return nil
+            return Data()
         }
     }
 

@@ -9,10 +9,13 @@ import UIKit
 
 class ImageCollectionViewCell: UICollectionViewCell {
     
+    // MARK: - IBOutlet declaration
     @IBOutlet weak var imageView: CachedImageView!
 
+    // MARK: - variable declaration
     var photo: FlickrPhotoData? = nil
     
+    // MARK: - UITableViewCell methods
     func setData(_ data: FlickrPhotoData?) {
         photo = data
         guard let photo = photo, let thumbnailURL = photo.thumbnailURL else {

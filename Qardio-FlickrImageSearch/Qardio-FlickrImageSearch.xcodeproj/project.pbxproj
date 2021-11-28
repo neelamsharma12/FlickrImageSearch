@@ -29,6 +29,7 @@
 		AE3CECB7275374C600EF765C /* CachedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CECB6275374C600EF765C /* CachedImageView.swift */; };
 		AE3CECBA2753824400EF765C /* CustomFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CECB92753824400EF765C /* CustomFooterView.swift */; };
 		AE3CECC12753A74400EF765C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CECC02753A74400EF765C /* NetworkManager.swift */; };
+		AE3CECC32753CFE400EF765C /* FlickrImageSearchHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CECC22753CFE400EF765C /* FlickrImageSearchHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		AE3CECB6275374C600EF765C /* CachedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageView.swift; sourceTree = "<group>"; };
 		AE3CECB92753824400EF765C /* CustomFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFooterView.swift; sourceTree = "<group>"; };
 		AE3CECC02753A74400EF765C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AE3CECC22753CFE400EF765C /* FlickrImageSearchHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageSearchHistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +138,6 @@
 				AE3CEC152753431200EF765C /* SceneDelegate.swift */,
 				AE3CEC1F2753431400EF765C /* Assets.xcassets */,
 				AE3CEC242753431400EF765C /* Info.plist */,
-				AE3CEC1C2753431200EF765C /* Qardio_FlickrImageSearch.xcdatamodeld */,
 			);
 			path = "Qardio-FlickrImageSearch";
 			sourceTree = "<group>";
@@ -170,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				AE3CEC172753431200EF765C /* FlickrImageSearchViewController.swift */,
+				AE3CECC22753CFE400EF765C /* FlickrImageSearchHistoryViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -218,6 +220,7 @@
 				AE3CECA4275362D500EF765C /* Photos.swift */,
 				AE3CECA6275362E800EF765C /* PhotoInternal.swift */,
 				AE3CECA82753630C00EF765C /* FlickrPhotoData.swift */,
+				AE3CEC1C2753431200EF765C /* Qardio_FlickrImageSearch.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 			files = (
 				AE3CECC12753A74400EF765C /* NetworkManager.swift in Sources */,
 				AE3CEC9A275361DE00EF765C /* ApplicationHost.swift in Sources */,
+				AE3CECC32753CFE400EF765C /* FlickrImageSearchHistoryViewController.swift in Sources */,
 				AE3CECB12753740B00EF765C /* CacheManager.swift in Sources */,
 				AE3CECA22753627800EF765C /* FlickrConstants.swift in Sources */,
 				AE3CECA92753630C00EF765C /* FlickrPhotoData.swift in Sources */,

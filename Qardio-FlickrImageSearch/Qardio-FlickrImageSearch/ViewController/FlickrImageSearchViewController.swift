@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 private struct FlickrImageSearchViewControllerConstants {
     static let cellPadding: CGFloat = 10.0
@@ -46,14 +47,12 @@ class FlickrImageSearchViewController: UICollectionViewController {
     }
 
     // MARK: - Private methods
-    
     private func configureCitySearchView() {
         navigationItem.hidesSearchBarWhenScrolling = false
         navigationItem.searchController = searchController
         searchController.searchBar.delegate = self
         self.definesPresentationContext = true
         self.navigationItem.titleView = searchController.searchBar
-        self.navigationItem.titleView?.tintColor = .white
         searchController.hidesNavigationBarDuringPresentation = false
         searchController.searchBar.placeholder = "Search Images"
     }
@@ -61,6 +60,24 @@ class FlickrImageSearchViewController: UICollectionViewController {
     @objc fileprivate func searchNextPage(){
         let currentPage = (viewModel?.imageList?.count ?? 0)/FlickrImageSearchViewControllerConstants.itemsPerPage
         viewModel?.getImageList(forSearchString: searchString, pageNumber: currentPage+1)
+        createData()
+    }
+    
+    func createData() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        guard let searchEntity = NSEntityDescription.entity(forEntityName: "SearchHistory", in: managedContext) else {
+            return
+        }
+        let searcHistory = NSManagedObject(entity: searchEntity, insertInto: managedContext)
+        searcHistory.setValue(searchString, forKeyPath: "keyword")
+        do {
+            try managedContext.save()
+        } catch let error as NSError {
+            debugPrint("Could not save. \(error), \(error.userInfo)")
+        }
     }
 
 }
@@ -121,10 +138,13 @@ extension FlickrImageSearchViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: FlickrImageSearchViewControllerConstants.footerIdentifier, for: indexPath) as! CustomFooterView
-        isLoading ? footerView.loader.startAnimating(): footerView.loader.stopAnimating()
-        return footerView
+        if let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: FlickrImageSearchViewControllerConstants.footerIdentifier, for: indexPath) as? CustomFooterView {
+            isLoading ? footerView.loader.startAnimating(): footerView.loader.stopAnimating()
+            return footerView
+        }
+        return UICollectionReusableView()
     }
+
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout
@@ -148,6 +168,7 @@ extension FlickrImageSearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if isFulfillingSearchConditions{
             viewModel?.getImageList(forSearchString: searchString, pageNumber: 0, andItemsPerPage: FlickrImageSearchViewControllerConstants.itemsPerPage)
+            createData()
             viewModel?.imageList?.removeAll()
             isLoading = true
             searchController.isActive = false
