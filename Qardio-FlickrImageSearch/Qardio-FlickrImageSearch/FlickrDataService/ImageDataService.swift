@@ -7,9 +7,10 @@
 
 import Foundation
 
-class ImageDataService {
+struct ImageDataService {
+    
     var session: URLSession { URLSession.shared }
-    var downloadTasks = [URL: DownloadTask]()
+
 }
 
 extension ImageDataService: ImageSession {
