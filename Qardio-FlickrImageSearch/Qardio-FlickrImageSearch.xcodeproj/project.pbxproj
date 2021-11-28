@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE3CEC142753431200EF765C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CEC132753431200EF765C /* AppDelegate.swift */; };
+		AE3CEC162753431200EF765C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CEC152753431200EF765C /* SceneDelegate.swift */; };
+		AE3CEC182753431200EF765C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CEC172753431200EF765C /* ViewController.swift */; };
+		AE3CEC1B2753431200EF765C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE3CEC192753431200EF765C /* Main.storyboard */; };
+		AE3CEC1E2753431200EF765C /* Qardio_FlickrImageSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE3CEC1C2753431200EF765C /* Qardio_FlickrImageSearch.xcdatamodeld */; };
+		AE3CEC202753431400EF765C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE3CEC1F2753431400EF765C /* Assets.xcassets */; };
+		AE3CEC232753431400EF765C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE3CEC212753431400EF765C /* LaunchScreen.storyboard */; };
+		AE3CEC2E2753431400EF765C /* FlickrImageSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CEC2D2753431400EF765C /* FlickrImageSearchTests.swift */; };
+		AE3CEC382753431400EF765C /* FlickrImageSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CEC372753431400EF765C /* FlickrImageSearchUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE3CEC2A2753431400EF765C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE3CEC082753431200EF765C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE3CEC0F2753431200EF765C;
+			remoteInfo = "Qardio-FlickrImageSearch";
+		};
+		AE3CEC342753431400EF765C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE3CEC082753431200EF765C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE3CEC0F2753431200EF765C;
+			remoteInfo = "Qardio-FlickrImageSearch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE3CEC102753431200EF765C /* Qardio-FlickrImageSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Qardio-FlickrImageSearch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE3CEC132753431200EF765C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE3CEC152753431200EF765C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AE3CEC172753431200EF765C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE3CEC1A2753431200EF765C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE3CEC1D2753431200EF765C /* Qardio_FlickrImageSearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Qardio_FlickrImageSearch.xcdatamodel; sourceTree = "<group>"; };
+		AE3CEC1F2753431400EF765C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE3CEC222753431400EF765C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE3CEC242753431400EF765C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE3CEC292753431400EF765C /* Qardio-FlickrImageSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Qardio-FlickrImageSearchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE3CEC2D2753431400EF765C /* FlickrImageSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageSearchTests.swift; sourceTree = "<group>"; };
+		AE3CEC332753431400EF765C /* Qardio-FlickrImageSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Qardio-FlickrImageSearchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE3CEC372753431400EF765C /* FlickrImageSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageSearchUITests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE3CEC0D2753431200EF765C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE3CEC262753431400EF765C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE3CEC302753431400EF765C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE3CEC072753431200EF765C = {
+			isa = PBXGroup;
+			children = (
+				AE3CEC122753431200EF765C /* Qardio-FlickrImageSearch */,
+				AE3CEC2C2753431400EF765C /* Qardio-FlickrImageSearchTests */,
+				AE3CEC362753431400EF765C /* Qardio-FlickrImageSearchUITests */,
+				AE3CEC112753431200EF765C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE3CEC112753431200EF765C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE3CEC102753431200EF765C /* Qardio-FlickrImageSearch.app */,
+				AE3CEC292753431400EF765C /* Qardio-FlickrImageSearchTests.xctest */,
+				AE3CEC332753431400EF765C /* Qardio-FlickrImageSearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE3CEC122753431200EF765C /* Qardio-FlickrImageSearch */ = {
+			isa = PBXGroup;
+			children = (
+				AE3CEC132753431200EF765C /* AppDelegate.swift */,
+				AE3CEC152753431200EF765C /* SceneDelegate.swift */,
+				AE3CEC172753431200EF765C /* ViewController.swift */,
+				AE3CEC192753431200EF765C /* Main.storyboard */,
+				AE3CEC1F2753431400EF765C /* Assets.xcassets */,
+				AE3CEC212753431400EF765C /* LaunchScreen.storyboard */,
+				AE3CEC242753431400EF765C /* Info.plist */,
+				AE3CEC1C2753431200EF765C /* Qardio_FlickrImageSearch.xcdatamodeld */,
+			);
+			path = "Qardio-FlickrImageSearch";
+			sourceTree = "<group>";
+		};
+		AE3CEC2C2753431400EF765C /* Qardio-FlickrImageSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE3CEC2D2753431400EF765C /* FlickrImageSearchTests.swift */,
+			);
+			path = "Qardio-FlickrImageSearchTests";
+			sourceTree = "<group>";
+		};
+		AE3CEC362753431400EF765C /* Qardio-FlickrImageSearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE3CEC372753431400EF765C /* FlickrImageSearchUITests.swift */,
+			);
+			path = "Qardio-FlickrImageSearchUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE3CEC0F2753431200EF765C /* Qardio-FlickrImageSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE3CEC3D2753431400EF765C /* Build configuration list for PBXNativeTarget "Qardio-FlickrImageSearch" */;
+			buildPhases = (
+				AE3CEC0C2753431200EF765C /* Sources */,
+				AE3CEC0D2753431200EF765C /* Frameworks */,
+				AE3CEC0E2753431200EF765C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Qardio-FlickrImageSearch";
+			productName = "Qardio-FlickrImageSearch";
+			productReference = AE3CEC102753431200EF765C /* Qardio-FlickrImageSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE3CEC282753431400EF765C /* Qardio-FlickrImageSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE3CEC402753431400EF765C /* Build configuration list for PBXNativeTarget "Qardio-FlickrImageSearchTests" */;
+			buildPhases = (
+				AE3CEC252753431400EF765C /* Sources */,
+				AE3CEC262753431400EF765C /* Frameworks */,
+				AE3CEC272753431400EF765C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE3CEC2B2753431400EF765C /* PBXTargetDependency */,
+			);
+			name = "Qardio-FlickrImageSearchTests";
+			productName = "Qardio-FlickrImageSearchTests";
+			productReference = AE3CEC292753431400EF765C /* Qardio-FlickrImageSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE3CEC322753431400EF765C /* Qardio-FlickrImageSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE3CEC432753431400EF765C /* Build configuration list for PBXNativeTarget "Qardio-FlickrImageSearchUITests" */;
+			buildPhases = (
+				AE3CEC2F2753431400EF765C /* Sources */,
+				AE3CEC302753431400EF765C /* Frameworks */,
+				AE3CEC312753431400EF765C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE3CEC352753431400EF765C /* PBXTargetDependency */,
+			);
+			name = "Qardio-FlickrImageSearchUITests";
+			productName = "Qardio-FlickrImageSearchUITests";
+			productReference = AE3CEC332753431400EF765C /* Qardio-FlickrImageSearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE3CEC082753431200EF765C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					AE3CEC0F2753431200EF765C = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					AE3CEC282753431400EF765C = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = AE3CEC0F2753431200EF765C;
+					};
+					AE3CEC322753431400EF765C = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = AE3CEC0F2753431200EF765C;
+					};
+				};
+			};
+			buildConfigurationList = AE3CEC0B2753431200EF765C /* Build configuration list for PBXProject "Qardio-FlickrImageSearch" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE3CEC072753431200EF765C;
+			productRefGroup = AE3CEC112753431200EF765C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE3CEC0F2753431200EF765C /* Qardio-FlickrImageSearch */,
+				AE3CEC282753431400EF765C /* Qardio-FlickrImageSearchTests */,
+				AE3CEC322753431400EF765C /* Qardio-FlickrImageSearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE3CEC0E2753431200EF765C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE3CEC232753431400EF765C /* LaunchScreen.storyboard in Resources */,
+				AE3CEC202753431400EF765C /* Assets.xcassets in Resources */,
+				AE3CEC1B2753431200EF765C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE3CEC272753431400EF765C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE3CEC312753431400EF765C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE3CEC0C2753431200EF765C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE3CEC1E2753431200EF765C /* Qardio_FlickrImageSearch.xcdatamodeld in Sources */,
+				AE3CEC182753431200EF765C /* ViewController.swift in Sources */,
+				AE3CEC142753431200EF765C /* AppDelegate.swift in Sources */,
+				AE3CEC162753431200EF765C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE3CEC252753431400EF765C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE3CEC2E2753431400EF765C /* FlickrImageSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE3CEC2F2753431400EF765C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE3CEC382753431400EF765C /* FlickrImageSearchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE3CEC2B2753431400EF765C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE3CEC0F2753431200EF765C /* Qardio-FlickrImageSearch */;
+			targetProxy = AE3CEC2A2753431400EF765C /* PBXContainerItemProxy */;
+		};
+		AE3CEC352753431400EF765C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE3CEC0F2753431200EF765C /* Qardio-FlickrImageSearch */;
+			targetProxy = AE3CEC342753431400EF765C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE3CEC192753431200EF765C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE3CEC1A2753431200EF765C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE3CEC212753431400EF765C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE3CEC222753431400EF765C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE3CEC3B2753431400EF765C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE3CEC3C2753431400EF765C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE3CEC3E2753431400EF765C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Qardio-FlickrImageSearch/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neelam.-Qardio-FlickrImageSearch.Qardio-FlickrImageSearch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE3CEC3F2753431400EF765C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Qardio-FlickrImageSearch/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neelam.-Qardio-FlickrImageSearch.Qardio-FlickrImageSearch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE3CEC412753431400EF765C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neelam.-Qardio-FlickrImageSearch.Qardio-FlickrImageSearchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qardio-FlickrImageSearch.app/Qardio-FlickrImageSearch";
+			};
+			name = Debug;
+		};
+		AE3CEC422753431400EF765C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neelam.-Qardio-FlickrImageSearch.Qardio-FlickrImageSearchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qardio-FlickrImageSearch.app/Qardio-FlickrImageSearch";
+			};
+			name = Release;
+		};
+		AE3CEC442753431400EF765C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neelam.-Qardio-FlickrImageSearch.Qardio-FlickrImageSearchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Qardio-FlickrImageSearch";
+			};
+			name = Debug;
+		};
+		AE3CEC452753431400EF765C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neelam.-Qardio-FlickrImageSearch.Qardio-FlickrImageSearchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Qardio-FlickrImageSearch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE3CEC0B2753431200EF765C /* Build configuration list for PBXProject "Qardio-FlickrImageSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE3CEC3B2753431400EF765C /* Debug */,
+				AE3CEC3C2753431400EF765C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE3CEC3D2753431400EF765C /* Build configuration list for PBXNativeTarget "Qardio-FlickrImageSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE3CEC3E2753431400EF765C /* Debug */,
+				AE3CEC3F2753431400EF765C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE3CEC402753431400EF765C /* Build configuration list for PBXNativeTarget "Qardio-FlickrImageSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE3CEC412753431400EF765C /* Debug */,
+				AE3CEC422753431400EF765C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE3CEC432753431400EF765C /* Build configuration list for PBXNativeTarget "Qardio-FlickrImageSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE3CEC442753431400EF765C /* Debug */,
+				AE3CEC452753431400EF765C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AE3CEC1C2753431200EF765C /* Qardio_FlickrImageSearch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AE3CEC1D2753431200EF765C /* Qardio_FlickrImageSearch.xcdatamodel */,
+			);
+			currentVersion = AE3CEC1D2753431200EF765C /* Qardio_FlickrImageSearch.xcdatamodel */;
+			path = Qardio_FlickrImageSearch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AE3CEC082753431200EF765C /* Project object */;
+}
