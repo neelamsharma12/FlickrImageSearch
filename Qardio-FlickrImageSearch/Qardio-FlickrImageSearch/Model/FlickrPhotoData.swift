@@ -14,16 +14,15 @@ public struct FlickrPhotoData {
     let secret : String
     let farm : Int
     
-    var highResPhotoURL: URL? {
+    var thumbnailURL: URL?{
         get {
-            // this is the url for a high resolution image
-            if let url =  URL(string: "https://farm\(farm).staticflickr.com/\(server)/\(photoID)_\(secret)_b.jpg") {
+            // This is the full url to get the photo
+            if let url = URL(string: "https://farm\(farm).static.flickr.com/\(server)/\(photoID)_\(secret).jpg") {
                 return url
             }
             return nil
         }
     }
-
 }
 
 extension FlickrPhotoData: Decodable {

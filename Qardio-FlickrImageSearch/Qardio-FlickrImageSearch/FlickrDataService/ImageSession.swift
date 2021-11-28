@@ -22,5 +22,5 @@ protocol ImageSession {
     /// API fo fetch the Images from the json file
     /// Parameters:
     ///  - completion: Handles the response
-    func loadImagesData(forSearchString searchString: String, pageNumber: Int, andItemsPerPage itemsPerPage: Int, completion: @escaping Handler<Photos>)
+    func loadImagesData(forSearchString searchString: String?, pageNumber: Int, andItemsPerPage itemsPerPage: Int, completion: @escaping Handler<Photos>)
 }

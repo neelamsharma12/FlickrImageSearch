@@ -1,24 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DuJ-Ws-CXt">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Flickr Image Search View Controller-->
+        <scene sceneID="8fu-uU-ajW">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <collectionViewController id="3W7-ge-ZQ4" customClass="FlickrImageSearchViewController" customModule="Qardio_FlickrImageSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="RoX-nC-RJq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HbQ-wM-6nf">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="50" height="50"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCollectionViewCell" id="4dm-Bf-mjw" customClass="ImageCollectionViewCell" customModule="Qardio_FlickrImageSearch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZA1-dr-qjH" customClass="CachedImageView" customModule="Qardio_FlickrImageSearch" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="ZA1-dr-qjH" secondAttribute="height" multiplier="1:1" id="w0m-mg-Cff"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="ZA1-dr-qjH" firstAttribute="leading" secondItem="4dm-Bf-mjw" secondAttribute="leading" id="33R-SX-0Bx"/>
+                                    <constraint firstItem="ZA1-dr-qjH" firstAttribute="top" secondItem="4dm-Bf-mjw" secondAttribute="top" id="8JC-5t-A23"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZA1-dr-qjH" secondAttribute="bottom" id="I0s-A9-D43"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZA1-dr-qjH" secondAttribute="trailing" id="irE-V4-RPj"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="ZA1-dr-qjH" id="8MU-WA-1RE"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomFooterView" id="R56-lF-5bf" customClass="CustomFooterView" customModule="Qardio_FlickrImageSearch" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="100" width="414" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2Ds-Uq-nPt">
+                                    <rect key="frame" x="188.5" y="6.5" width="37" height="37"/>
+                                    <color key="color" red="0.64762036394827138" green="0.33762351413450559" blue="0.44290069291323192" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </activityIndicatorView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="2Ds-Uq-nPt" firstAttribute="centerY" secondItem="R56-lF-5bf" secondAttribute="centerY" id="Ct6-pN-nRa"/>
+                                <constraint firstItem="2Ds-Uq-nPt" firstAttribute="centerX" secondItem="R56-lF-5bf" secondAttribute="centerX" id="mcV-Tz-oFM"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="loader" destination="2Ds-Uq-nPt" id="6ET-9V-abg"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="3W7-ge-ZQ4" id="d6k-4s-A9q"/>
+                            <outlet property="delegate" destination="3W7-ge-ZQ4" id="i29-Pp-3uy"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="LKh-IK-T4Y"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qOw-a8-6tK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2481.1594202898555" y="-115.84821428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Kxf-Mp-i0I">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DuJ-Ws-CXt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sez-7W-S4P">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3W7-ge-ZQ4" kind="relationship" relationship="rootViewController" id="SGK-4t-vwC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GLM-av-RRd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1571.0144927536232" y="-115.84821428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="placeholder.png" width="286" height="176"/>
+    </resources>
 </document>

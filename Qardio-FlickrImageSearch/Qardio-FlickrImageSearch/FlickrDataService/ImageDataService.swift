@@ -7,8 +7,9 @@
 
 import Foundation
 
-public struct ImageDataService {
-    internal var session: URLSession { URLSession.shared}
+class ImageDataService {
+    var session: URLSession { URLSession.shared }
+    var downloadTasks = [URL: DownloadTask]()
 }
 
 extension ImageDataService: ImageSession {
@@ -16,17 +17,17 @@ extension ImageDataService: ImageSession {
     /// API fo fetch the Images from the json file
     /// Parameters:
     ///  - completion: Handles the response
-    func loadImagesData(forSearchString searchString: String, pageNumber: Int, andItemsPerPage itemsPerPage: Int, completion: @escaping Handler<Photos>) {
-        guard let flickrSearchURL = searchURL(forSearchString: searchString, pageNumber: pageNumber, andItemsPerPage: itemsPerPage) else{
+    func loadImagesData(forSearchString searchString: String?, pageNumber: Int, andItemsPerPage itemsPerPage: Int, completion: @escaping Handler<Photos>) {
+        guard let flickrSearchURL = searchURL(forSearchString: searchString ?? "", pageNumber: pageNumber, andItemsPerPage: itemsPerPage) else{
             debugPrint("failed to create search url")
             return
         }
-        makeRequest(Photos.self, url: flickrSearchURL) { result in
+        NetworkManager.shared.makeRequest(Photos.self, url: flickrSearchURL) { result in
             completion(result)
         }
     }
     
-    /// API fo return the search url from the searcg string
+    /// API fo return the search url from the search string
     /// Parameters: searchString, pageNumber and itemsPerPage
     ///  - completion: Handles the response
     private func searchURL(forSearchString searchString: String, pageNumber: Int, andItemsPerPage itemsPerPage: Int) -> URL?{
