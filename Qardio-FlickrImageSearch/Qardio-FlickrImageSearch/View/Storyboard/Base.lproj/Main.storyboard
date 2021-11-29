@@ -12,7 +12,7 @@
         <!--Flickr Image Search View Controller-->
         <scene sceneID="8fu-uU-ajW">
             <objects>
-                <collectionViewController storyboardIdentifier="image_list_view" id="3W7-ge-ZQ4" customClass="FlickrImageSearchViewController" customModule="Qardio_FlickrImageSearch" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="3W7-ge-ZQ4" customClass="FlickrImageSearchViewController" customModule="Qardio_FlickrImageSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="RoX-nC-RJq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,7 +54,7 @@
                             <rect key="frame" x="0.0" y="100" width="414" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2Ds-Uq-nPt">
+                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2Ds-Uq-nPt">
                                     <rect key="frame" x="188.5" y="6.5" width="37" height="37"/>
                                     <color key="color" red="0.64762036394827138" green="0.33762351413450559" blue="0.44290069291323192" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </activityIndicatorView>
@@ -81,7 +81,7 @@
         <!--Search History-->
         <scene sceneID="0D9-BO-pBp">
             <objects>
-                <viewController storyboardIdentifier="image_search_history" id="KQF-A1-XTz" customClass="FlickrImageSearchHistoryViewController" customModule="Qardio_FlickrImageSearch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KQF-A1-XTz" customClass="FlickrImageSearchHistoryViewController" customModule="Qardio_FlickrImageSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Su-gG-hFg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

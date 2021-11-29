@@ -21,13 +21,14 @@ struct FlickrImageSearchViewControllerConstants {
 }
 
 class FlickrImageSearchViewController: UICollectionViewController {
-
+    
     // MARK: - variable declaration
     var viewModel: FlickrImageSearchViewModel?
     fileprivate var itemsPerRow = 2
     let searchController = UISearchController(searchResultsController: nil)
     var searchString: String? = nil
     fileprivate var isLoading: Bool = false
+    private let footerView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
     var isFulfillingSearchConditions: Bool{
         get {
             if let searchText = searchController.searchBar.text {
@@ -60,6 +61,7 @@ class FlickrImageSearchViewController: UICollectionViewController {
     @objc fileprivate func searchNextPage(){
         let currentPage = (viewModel?.imageList?.count ?? 0)/FlickrImageSearchViewControllerConstants.itemsPerPage
         viewModel?.getImageList(forSearchString: searchString, pageNumber: currentPage+1)
+        footerView.startAnimating()
         createData()
     }
     
@@ -86,8 +88,9 @@ class FlickrImageSearchViewController: UICollectionViewController {
 extension FlickrImageSearchViewController: FlickrImageSearchViewModelDelegate {
     func didLoadImageList(_ photos: [FlickrPhotoData]?) {
         DispatchQueue.main.async {
-            self.collectionView.reloadData()
             self.isLoading = false
+            self.footerView.stopAnimating()
+            self.collectionView.reloadData()
         }
     }
     
@@ -138,9 +141,11 @@ extension FlickrImageSearchViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        if let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: FlickrImageSearchViewControllerConstants.footerIdentifier, for: indexPath) as? CustomFooterView {
-            isLoading ? footerView.loader.startAnimating(): footerView.loader.stopAnimating()
-            return footerView
+        if kind == UICollectionView.elementKindSectionFooter {
+            let footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: FlickrImageSearchViewControllerConstants.footerIdentifier, for: indexPath)
+            footerView.frame = CGRect(x: UIScreen.main.bounds.minX, y: 10, width: collectionView.bounds.width, height: 50)
+            footer.addSubview(footerView)
+            return footer
         }
         return UICollectionReusableView()
     }
@@ -168,6 +173,7 @@ extension FlickrImageSearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if isFulfillingSearchConditions{
             viewModel?.getImageList(forSearchString: searchString, pageNumber: 0, andItemsPerPage: FlickrImageSearchViewControllerConstants.itemsPerPage)
+            footerView.startAnimating()
             createData()
             viewModel?.imageList?.removeAll()
             isLoading = true
