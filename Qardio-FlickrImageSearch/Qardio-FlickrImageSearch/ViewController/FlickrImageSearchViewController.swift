@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-private struct FlickrImageSearchViewControllerConstants {
+struct FlickrImageSearchViewControllerConstants {
     static let cellPadding: CGFloat = 10.0
     static let defaultNumberOfColumns = 4
     static let cellIdentifier = "ImageCollectionViewCell"
@@ -63,7 +63,7 @@ class FlickrImageSearchViewController: UICollectionViewController {
         createData()
     }
     
-    func createData() {
+    private func createData() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
         }
@@ -84,7 +84,7 @@ class FlickrImageSearchViewController: UICollectionViewController {
 
 // MARK: - FlickrImageSearchViewModelDelegate
 extension FlickrImageSearchViewController: FlickrImageSearchViewModelDelegate {
-    func didLoadImageList() {
+    func didLoadImageList(_ photos: [FlickrPhotoData]?) {
         DispatchQueue.main.async {
             self.collectionView.reloadData()
             self.isLoading = false

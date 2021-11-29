@@ -9,7 +9,7 @@ import Foundation
 
 protocol FlickrImageSearchViewModelDelegate: AnyObject {
     
-    func didLoadImageList()
+    func didLoadImageList(_ photos: [FlickrPhotoData]?)
     func didFailLoadingImageList(_ error: Error?)
 
 }
@@ -19,7 +19,7 @@ final class FlickrImageSearchViewModel {
 
     // MARK: - variable declaration
     private var session: ImageSession
-    private weak var delegate: FlickrImageSearchViewModelDelegate?
+    weak var delegate: FlickrImageSearchViewModelDelegate?
     var imageList: [FlickrPhotoData]?
 
     init(sessionProvider: ImageSession, delegate: FlickrImageSearchViewModelDelegate? = nil) {
@@ -40,7 +40,7 @@ final class FlickrImageSearchViewModel {
                 } else {
                     self.imageList = imagesListData.photo.photos
                 }
-                self.delegate?.didLoadImageList()
+                self.delegate?.didLoadImageList(self.imageList)
             case .failure(let error):
                 self.delegate?.didFailLoadingImageList(error)
             }

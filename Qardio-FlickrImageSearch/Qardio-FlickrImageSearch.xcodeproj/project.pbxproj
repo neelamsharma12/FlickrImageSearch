@@ -14,7 +14,7 @@
 		AE3CEC1E2753431200EF765C /* Qardio_FlickrImageSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE3CEC1C2753431200EF765C /* Qardio_FlickrImageSearch.xcdatamodeld */; };
 		AE3CEC202753431400EF765C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE3CEC1F2753431400EF765C /* Assets.xcassets */; };
 		AE3CEC232753431400EF765C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE3CEC212753431400EF765C /* LaunchScreen.storyboard */; };
-		AE3CEC2E2753431400EF765C /* FlickrImageSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CEC2D2753431400EF765C /* FlickrImageSearchTests.swift */; };
+		AE3CEC2E2753431400EF765C /* FlickrImageSearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CEC2D2753431400EF765C /* FlickrImageSearchViewModelTests.swift */; };
 		AE3CEC382753431400EF765C /* FlickrImageSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CEC372753431400EF765C /* FlickrImageSearchUITests.swift */; };
 		AE3CEC98275361B000EF765C /* ImageSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CEC97275361B000EF765C /* ImageSession.swift */; };
 		AE3CEC9A275361DE00EF765C /* ApplicationHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CEC99275361DE00EF765C /* ApplicationHost.swift */; };
@@ -30,6 +30,9 @@
 		AE3CECBA2753824400EF765C /* CustomFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CECB92753824400EF765C /* CustomFooterView.swift */; };
 		AE3CECC12753A74400EF765C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CECC02753A74400EF765C /* NetworkManager.swift */; };
 		AE3CECC32753CFE400EF765C /* FlickrImageSearchHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CECC22753CFE400EF765C /* FlickrImageSearchHistoryViewController.swift */; };
+		AE3CECD22753E05B00EF765C /* MockFlickrImageSearchViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CECD12753E05B00EF765C /* MockFlickrImageSearchViewModelDelegate.swift */; };
+		AE3CECDA2754A67F00EF765C /* FlickrImageSearchViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CECD92754A67F00EF765C /* FlickrImageSearchViewControllerTests.swift */; };
+		AE3CECDC2754AA6800EF765C /* FlickrImageSearchHistoryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3CECDB2754AA6800EF765C /* FlickrImageSearchHistoryViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +63,7 @@
 		AE3CEC222753431400EF765C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE3CEC242753431400EF765C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE3CEC292753431400EF765C /* Qardio-FlickrImageSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Qardio-FlickrImageSearchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE3CEC2D2753431400EF765C /* FlickrImageSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageSearchTests.swift; sourceTree = "<group>"; };
+		AE3CEC2D2753431400EF765C /* FlickrImageSearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageSearchViewModelTests.swift; sourceTree = "<group>"; };
 		AE3CEC332753431400EF765C /* Qardio-FlickrImageSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Qardio-FlickrImageSearchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3CEC372753431400EF765C /* FlickrImageSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageSearchUITests.swift; sourceTree = "<group>"; };
 		AE3CEC97275361B000EF765C /* ImageSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSession.swift; sourceTree = "<group>"; };
@@ -77,6 +80,9 @@
 		AE3CECB92753824400EF765C /* CustomFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFooterView.swift; sourceTree = "<group>"; };
 		AE3CECC02753A74400EF765C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		AE3CECC22753CFE400EF765C /* FlickrImageSearchHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageSearchHistoryViewController.swift; sourceTree = "<group>"; };
+		AE3CECD12753E05B00EF765C /* MockFlickrImageSearchViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFlickrImageSearchViewModelDelegate.swift; sourceTree = "<group>"; };
+		AE3CECD92754A67F00EF765C /* FlickrImageSearchViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageSearchViewControllerTests.swift; sourceTree = "<group>"; };
+		AE3CECDB2754AA6800EF765C /* FlickrImageSearchHistoryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageSearchHistoryViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +151,10 @@
 		AE3CEC2C2753431400EF765C /* Qardio-FlickrImageSearchTests */ = {
 			isa = PBXGroup;
 			children = (
-				AE3CEC2D2753431400EF765C /* FlickrImageSearchTests.swift */,
+				AE3CECC42753DDB500EF765C /* Mocks */,
+				AE3CEC2D2753431400EF765C /* FlickrImageSearchViewModelTests.swift */,
+				AE3CECD92754A67F00EF765C /* FlickrImageSearchViewControllerTests.swift */,
+				AE3CECDB2754AA6800EF765C /* FlickrImageSearchHistoryViewControllerTests.swift */,
 			);
 			path = "Qardio-FlickrImageSearchTests";
 			sourceTree = "<group>";
@@ -271,6 +280,22 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE3CECC42753DDB500EF765C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				AE3CECCA2753DFF100EF765C /* Spies */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		AE3CECCA2753DFF100EF765C /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				AE3CECD12753E05B00EF765C /* MockFlickrImageSearchViewModelDelegate.swift */,
+			);
+			path = Spies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,7 +454,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE3CEC2E2753431400EF765C /* FlickrImageSearchTests.swift in Sources */,
+				AE3CECD22753E05B00EF765C /* MockFlickrImageSearchViewModelDelegate.swift in Sources */,
+				AE3CEC2E2753431400EF765C /* FlickrImageSearchViewModelTests.swift in Sources */,
+				AE3CECDA2754A67F00EF765C /* FlickrImageSearchViewControllerTests.swift in Sources */,
+				AE3CECDC2754AA6800EF765C /* FlickrImageSearchHistoryViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,7 @@
         <!--Flickr Image Search View Controller-->
         <scene sceneID="8fu-uU-ajW">
             <objects>
-                <collectionViewController id="3W7-ge-ZQ4" customClass="FlickrImageSearchViewController" customModule="Qardio_FlickrImageSearch" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="image_list_view" id="3W7-ge-ZQ4" customClass="FlickrImageSearchViewController" customModule="Qardio_FlickrImageSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="RoX-nC-RJq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,7 +81,7 @@
         <!--Search History-->
         <scene sceneID="0D9-BO-pBp">
             <objects>
-                <viewController id="KQF-A1-XTz" customClass="FlickrImageSearchHistoryViewController" customModule="Qardio_FlickrImageSearch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="image_search_history" id="KQF-A1-XTz" customClass="FlickrImageSearchHistoryViewController" customModule="Qardio_FlickrImageSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Su-gG-hFg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
