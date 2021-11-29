@@ -9,6 +9,7 @@ import UIKit
 
 class CustomFooterView: UICollectionReusableView {
     
+    // MARK: - IBOutlet declaration
     @IBOutlet weak var loader: UIActivityIndicatorView!
     
 }

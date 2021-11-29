@@ -9,8 +9,10 @@ import UIKit
 
 class CachedImageView: UIImageView {
     
+    // MARK: - variable declaration
     private var urlKey: String! = nil
     
+    // MARK: - Utility methods
     func loadImage(atURL url: URL, placeHolder: Bool = true, completion: (()-> Void)? = nil) {
         
         self.urlKey = url.absoluteString

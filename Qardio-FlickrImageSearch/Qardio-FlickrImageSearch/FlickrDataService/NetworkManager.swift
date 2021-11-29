@@ -14,6 +14,7 @@ class DownloadTask:  URLSessionTask {
     // MARK: - variable declaration
     var completionHandler: RequestCompletionHandler
     
+    // MARK: - Init Methods
     init(completionHandler: @escaping RequestCompletionHandler) {
         self.completionHandler = completionHandler
     }
